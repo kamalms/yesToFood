@@ -1,0 +1,49 @@
+<div class="container" style="height:100%">
+
+  <div class="left-half" style="cursor: pointer;">
+
+    <div class="flex flex-wrap flex-column">
+      <div [routerLink]='[{ outlets: { productlist: ["dashboard"] } }]' routerLinkActive="button-selected"
+        class="label-cus gap-3 flex h-4rem h-4rem m-2 flex align-items-center justify-content-center">
+   <i   class="w-1 pi pi-chart-pie"></i>
+        Dashboard
+      </div>
+
+      <div [routerLink]='[{ outlets: { productlist: ["addproduct"] } }]' routerLinkActive="button-selected"
+        class=" label-cus gap-3 flex h-4rem h-4rem m-2 flex align-items-center justify-content-center">
+        <i class="w-1 pi pi-chart-pie"></i>
+        <span>Products</span>
+      </div>
+
+      <div [routerLink]='[{ outlets: { productlist: ["about"] } }]' routerLinkActive="button-selected"
+        class="label-cus gap-3 flex h-4rem h-4rem m-2 flex align-items-center justify-content-center">
+         <i   class=" w-1 pi pi-chart-pie"></i>
+        About Yes2Food</div>
+      <!-- <div [routerLink]='[{ outlets: { productlist: ["tender-info"] } }]'
+              class="label-cus flex align-items-center justify-content-center h-4rem bg-blue-200 font-bold text-white border-round m-2">
+              Approvals
+             </div> -->
+
+      <div [routerLink]='[{ outlets: { productlist: ["contact"] } }]' routerLinkActive="button-selected"
+        class="label-cus gap-3 flex h-4rem h-4rem m-2 flex align-items-center justify-content-center">
+         <i   class="left-align-icon pi pi-chart-pie"></i>
+        Contact</div>
+
+      <div [routerLink]='[{ outlets: { productlist: ["legal"] } }]' routerLinkActive="button-selected"
+        class="label-cus gap-3 flex h-4rem h-4rem m-2 flex align-items-center justify-content-center">  <i   class="left-align-icon pi pi-chart-pie"></i>
+        Legal</div>
+
+      <div [routerLink]='[{ outlets: { productlist: ["faqs"] } }]' routerLinkActive="button-selected"
+        class="label-cus gap-3 flex h-4rem h-4rem m-2 flex align-items-center justify-content-center">  <i   class="left-align-icon pi pi-chart-pie"></i>
+        FAQs</div>
+      <!-- <div  [routerLink]='[{ outlets: { productlist: ["tender-comments"] } }]' routerLinkActive="button-selected"
+             class="label-cus flex  border-round m-2 border-solid    h-4rem   m-2 surface-overlay font-bold flex align-items-center justify-content-center">
+             Comments</div> -->
+
+
+    </div>
+  </div>
+  <div class="right-half">
+    <router-outlet name="productlist"></router-outlet>
+  </div>
+</div>

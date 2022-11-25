@@ -1,0 +1,75 @@
+.input-label{
+  border: 1px solid rgba(254, 114, 76, 1)
+}
+.product-name{
+  background: #FFFFFF;
+box-shadow: 0px 15px 30px rgba(211, 209, 216, 0.25);
+border-radius: 15px;
+width: 50%;
+height: 636px;
+
+
+
+}
+
+.product-cost {
+width: auto;
+height: 50%;
+background: #FFFFFF;
+box-shadow: 0px 15px 30px rgba(211, 209, 216, 0.25);
+border-radius: 15px;
+margin-left: 3%;
+}
+
+.product-images{
+  width: auto;
+  height: 46%;
+  background: #FFFFFF;
+  box-shadow: 0px 15px 30px rgba(211, 209, 216, 0.25);
+  border-radius: 15px;
+  margin-top: 5%;
+  margin-left: 3%;
+}
+
+.food-field {
+background: #FFFFFF;
+border: 1px solid #9796A1;
+box-shadow: 15px 20px 45px rgba(233, 233, 233, 0.25);
+border-radius: 10px;
+}
+.des-label{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #9796A1;
+}
+textarea::placeholder {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+// font-size: 17px;
+color: #C4C4C4;
+}
+#ptitle:focus {
+background: #FFFFFF ;
+outline: none;
+border: 1px solid #FE724C !important;
+box-shadow: 15px 20px 45px rgba(233, 233, 233, 0.25)!important;
+border-radius: 10px !important;
+
+}
+
+.input-text-color{
+
+}
+
+input{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 26px;
+  color: #323643;
+}
