@@ -1,6 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 $card-background: #FAFBFC;
+$primary-color : #fe724c;
+$whitecolor: #ffffff;
+$border-color : rgba(254, 114, 76, 1);
+$whiteinCapital : #FFFFFF;
+$fieldlabelcolor : #9796A1;
+$inputplaceholder : #C4C4C4;
+%font-level-400 {
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: $fieldlabelcolor ;
+}
+
+%font-level-600 {
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: 600;
+}
+
+%box-shadow {
+ box-shadow: 0px 15px 30px rgba(211, 209, 216, 0.25);
+ border-radius: 15px;
+ background: $whiteinCapital;
+}
+%yestofoodbtn {
+background:$whiteinCapital;
+border: 1px solid $primary-color;
+box-shadow: 15px 20px 45px rgba(233, 233, 233, 0.25);
+border-radius: 10px;
+}
+
 html,
 body,
 app-root {
@@ -9,6 +47,7 @@ app-root {
   margin: 0;
   background: $card-background;
 }
+
 html,
 body {
   box-sizing: border-box;
@@ -18,7 +57,6 @@ body {
   min-height: 100vh;
   font-family: Poppins, "Helvetica Neue", sans-serif;
 }
-
 .button-text {
   font-family: "Poppins";
   font-style: normal;
@@ -35,12 +73,13 @@ body {
 .orange-color-palate {
   background: rgba(254, 114, 76, 1);
 }
+
 .orange-shadow {
   box-shadow: 0px 20px 50px 0px rgba(55, 69, 87, 0.1);
 }
 
 .orange-primary {
-  background: #fe724c;
+  background: $primary-color;
 }
 
 .menu-active-inner-text {
@@ -58,5 +97,5 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  color: #9796a1;
+  color: $fieldlabelcolor ;
 }

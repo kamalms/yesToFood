@@ -1,75 +1,151 @@
-.input-label{
-  border: 1px solid rgba(254, 114, 76, 1)
+@import "src/styles";
+
+%box-shodowofinner {
+  box-shadow: 15px 20px 45px rgba(233, 233, 233, 0.25);
+  border-radius: 10px;
 }
-.product-name{
-  background: #FFFFFF;
-box-shadow: 0px 15px 30px rgba(211, 209, 216, 0.25);
-border-radius: 15px;
-width: 50%;
-height: 636px;
 
+%addminusbtn {
+  border: 1px solid $primary-color;
+filter: drop-shadow(0px 20px 30px #EEF0F2);
+border-radius: 17px;
+border: 1.5px solid $primary-color;
+width: 30.6px;
+height: 30.6px;
+display: inline-block;
+}
 
+.input-label {
+  border: 1px solid $border-color;
+}
 
+.product-name {
+  @extend %box-shadow;
+  // width: 50%;
+  // height: 636px;
 }
 
 .product-cost {
-width: auto;
-height: 50%;
-background: #FFFFFF;
-box-shadow: 0px 15px 30px rgba(211, 209, 216, 0.25);
-border-radius: 15px;
-margin-left: 3%;
+  width: auto;
+  height: auto;
+  @extend %box-shadow;
+  margin-left: 3%;
 }
 
-.product-images{
+.product-images {
   width: auto;
   height: 46%;
-  background: #FFFFFF;
-  box-shadow: 0px 15px 30px rgba(211, 209, 216, 0.25);
-  border-radius: 15px;
+  @extend %box-shadow;
   margin-top: 5%;
   margin-left: 3%;
 }
 
-.food-field {
-background: #FFFFFF;
-border: 1px solid #9796A1;
-box-shadow: 15px 20px 45px rgba(233, 233, 233, 0.25);
-border-radius: 10px;
+.productinput-field {
+  background: $whiteinCapital;
+  border: 1px solid $fieldlabelcolor ;
+  @extend %box-shodowofinner;
 }
-.des-label{
-  font-family: 'Poppins';
-  font-style: normal;
+
+.form-label {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #9796A1;
+  color: $fieldlabelcolor ;
 }
+
 textarea::placeholder {
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-// font-size: 17px;
-color: #C4C4C4;
-}
-#ptitle:focus {
-background: #FFFFFF ;
-outline: none;
-border: 1px solid #FE724C !important;
-box-shadow: 15px 20px 45px rgba(233, 233, 233, 0.25)!important;
-border-radius: 10px !important;
-
+  font-weight: 400;
+  color: $inputplaceholder;
 }
 
-.input-text-color{
-
+.ptitle:focus {
+  background: $whiteinCapital ;
+  outline: none;
+  border: 1px solid $primary-color !important;
+  @extend %box-shodowofinner;
 }
 
-input{
-  font-family: 'Poppins';
+.input {
+  font-family: inherit;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 26px;
   color: #323643;
+  font-size: Max(16px, 1em);
+  padding: 0.35em 0.5em;
 }
+
+.input-textarea {
+  // font-family: inherit;
+  // font-style: normal;
+  // color: #323643;
+}
+
+.p-button.p-button-outlined {
+  background: $whiteinCapital;
+  border: 1px solid $primary-color;
+  box-shadow: 15px 20px 45px rgba(233, 233, 233, 0.25);
+  border-radius: 10px;
+  color: $primary-color;
+}
+
+.p-button.p-button-outlined:enabled:hover {
+  background: $whiteinCapital;
+  border: 1px solid $primary-color;
+  box-shadow: 15px 20px 45px rgba(233, 233, 233, 0.25);
+  border-radius: 10px;
+  color: $primary-color;
+}
+.plus-btn{
+ @extend %addminusbtn;
+background-color: $primary-color;
+}
+.minus-btn {
+ @extend %addminusbtn;
+}
+
+.plus-custom{
+  padding-left: 5px;
+  padding-top: 6px;
+  color: $whiteinCapital;
+
+}
+
+.minus-custom {
+  padding-left: 5px;
+  padding-top: 6px;
+  color: $primary-color;
+}
+.line {
+width: 20.8px;
+height: 0px;
+border: 1px solid $primary-color;
+margin: 3px;
+display:inline-block;
+border-top: 0;
+}
+
+.line:hover {
+  width: 20.8px;
+  height: 0px;
+  border: 1px solid $primary-color;
+  margin: 3px;
+  display:inline;
+  border-top: 0;
+  color: red;
+  }
+
+
+  .image-container {
+  ///  background: url(image);
+    width: 5vw;
+    height: 5vw;
+    border: 1px solid #EEEEEE;
+    filter: drop-shadow(15px 20px 45px rgba(233, 233, 233, 0.25));
+    border-radius: 10px;
+    background: #EEEEEE;
+border: 1px dashed #9A9FAE;
+box-shadow: 15px 20px 45px rgba(233, 233, 233, 0.25);
+border-radius: 10px;
+  }

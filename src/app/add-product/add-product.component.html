@@ -1,23 +1,63 @@
-<div class="grid ">
+<div class="grid min-h-screen ">
   <div class="col-6 product-name px-5 py-5">
-    <div class="field ">
-      <label for="firstname1" class="des-label">Product Title</label>
-      <input id="ptitle" type="text"  class="w-11 h-3rem food-field">
+    <div class="field">
+      <label for="firstname1" class="form-label">Product Title</label>
+      <input type="text"  class="w-11 h-3rem productinput-field input ptitle">
   </div>
   <div class="min-w-full field col-12">
-    <label for="address" class="des-label">Description</label>
-    <textarea id="address" type="text" rows="21" class="w-11 food-field" placeholder="tesing dthe "></textarea>
+    <label for="address" class="form-label">Description</label>
+    <textarea id="address" type="text" rows="21" class="w-11 productinput-field input-textarea ptitle" placeholder="tesing dthe "></textarea>
 </div>
-<div>
-  <button pButton type="button" label="Primary" class="p-button-outlined"></button>
+<div class="flex flex-row flex-wrap">
+  <button pButton type="button" label="Grocery" icon="pi pi-check" class="p-button-outlined m-3" styleClass="yestofoodbtn"></button>
+  <button pButton type="button" label="Food" icon="pi pi-check" class="p-button-outlined m-3" styleClass="yestofoodbtn"></button>
 </div>
   </div>
   <div class="col-6 ">
     <div class="product-cost">
-
+      <div class="grid">
+        <div class="col-6 field  px-5 py-5">
+          <label class="form-label">Amount</label>
+          <input type="text"  class="w-11 h-3rem productinput-field input ptitle">
+      </div>
+      <div class="col-6 field px-5 py-5">
+        <label class="form-label">Discount</label>
+        <input type="text"  class="w-11 h-3rem productinput-field input ptitle">
     </div>
-    <div class="product-images">
+   </div>
+   <div class="grid">
+    <div class="col-6 field  px-5 py-5 align-self-center form-label">
+      Expiry in
+  </div>
+  <div class="col-3 field pr-6 pl-5 py-5">
 
+    <input type="text"  class="w-11 h-3rem productinput-field input ptitle">
+</div>
+<div class="col-3 field pr-5 py-5">
+  <input type="text"  class="w-11 h-3rem productinput-field input ptitle">
+</div>
+</div>
+
+<div class="grid">
+  <div class="col-9 field  px-5 py-5 align-self-center form-label">
+   Quantity available
+</div>
+<div class="col-3 field pr-5 py-5">
+  <div class="minus-btn">
+
+    <i class="pi pi-minus minus-custom"></i>
+    <!-- <div class="line"></div> -->
+  </div>
+  <span class="p-3"> 2 </span>
+  <div class="plus-btn">
+    <i class="pi pi-plus plus-custom"></i>
+  </div>
+</div>
+</div>
+    </div>
+    <div class="product-images px-5 py-5 ">
+      <p class="form-label">Add product images (upto 5)</p>
+      <div class="image-container"></div>
     </div>
   </div>
 </div>
