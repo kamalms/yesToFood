@@ -1,5 +1,5 @@
 <div class="p-5 list-container">
-<p-table #dt [value]="customers" [(selection)]="selectedCustomers" dataKey="id" styleClass="p-datatable-customers" [rowHover]="true"
+<p-table #dt [value]="customers" [(selection)]="selectedCustomers" dataKey="id" styleClass="p-datatable-customers" [rowHover]="false"
             [rows]="10" [showCurrentPageReport]="true" [rowsPerPageOptions]="[10,25,50]" [loading]="loading"
             [paginator]="true" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
             [filterDelay]="0" [globalFilterFields]="['name','country.name','representative.name','status']">
@@ -18,25 +18,28 @@
                 <td  class="custom-td">
                   <p-tableCheckbox [value]="customer"></p-tableCheckbox>
               </td>
-                <td class="custom-td">
+              <td class="custom-td preview-img">
+                <img class="preview-img"  src="../../assets/product1.png">
+            </td>
+                <td class="custom-td product-name">
 
                   {{customer.name}}
               </td>
-              <td class="custom-td">
+              <td class="custom-td product-available">
 
                 <span class="image-text">{{customer.country.name}}</span>
             </td>
-            <td class="custom-td">
+            <td class="custom-td expire-in">
 
-              {{customer.name}}
+              {{customer.status}}
           </td>
-          <td class="custom-td">
+          <td class="custom-td offer">
 
-            {{customer.name}}
+            {{customer.activity}}
         </td>
-        <td class="custom-td">
+        <td class="custom-td price">
 
-          {{customer.name}}
+          {{customer.date}}
       </td>
       <td class="custom-td" style="text-align: center">
         <button pButton type="button" icon="pi pi-ellipsis-v" class="p-button-outlined m-3" styleClass="custom-btn"></button>

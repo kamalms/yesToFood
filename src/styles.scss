@@ -61,6 +61,15 @@ body {
 body::-webkit-scrollbar {
 //  display: none;
 }
+.p-component {
+  font-family: Poppins !important;
+}
+.p-button:focus{
+  box-shadow:  none !important;
+}
+.p-button.p-button-outlined:enabled:hover {
+  color: $primary-color ;
+}
 .button-text {
   font-family: "Poppins";
   font-style: normal;
