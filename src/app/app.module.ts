@@ -14,6 +14,11 @@ import { LegalComponent } from './legal/legal.component';
 import { FaqaComponent } from './faqa/faqa.component';
 import { AppHeaderComponent } from './app-header/app-header.component';
 import {ButtonModule} from 'primeng/button';
+import {TableModule} from 'primeng/table';
+import { ListComponent } from './list/list.component';
+
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,13 +30,16 @@ import {ButtonModule} from 'primeng/button';
     ContactComponent,
     LegalComponent,
     FaqaComponent,
-    AppHeaderComponent
+    AppHeaderComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ButtonModule
+    ButtonModule,
+    TableModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -56,6 +56,10 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: Poppins, "Helvetica Neue", sans-serif;
+  // overflow: hidden;
+}
+body::-webkit-scrollbar {
+//  display: none;
 }
 .button-text {
   font-family: "Poppins";

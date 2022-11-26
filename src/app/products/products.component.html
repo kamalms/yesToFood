@@ -9,13 +9,13 @@
         Dashboard
       </div>
 
-      <div [routerLink]='[{ outlets: { productlist: ["addproduct"] } }]' routerLinkActive="button-selected"
+      <div [routerLink]='[{ outlets: { productlist: ["productlist"] } }]' routerLinkActive="button-selected"
         class=" label-cus gap-3 flex h-4rem h-4rem m-2 flex align-items-center justify-content-center">
         <i class="w-1 pi pi-chart-pie"></i>
         <span>Products</span>
       </div>
 
-      <div [routerLink]='[{ outlets: { productlist: ["about"] } }]' routerLinkActive="button-selected"
+      <div [routerLink]='[{ outlets: { productlist: ["addproduct"] } }]' routerLinkActive="button-selected"
         class="label-cus gap-3 flex h-4rem h-4rem m-2 flex align-items-center justify-content-center">
          <i   class=" w-1 pi pi-chart-pie"></i>
         About Yes2Food</div>
@@ -40,7 +40,9 @@
              class="label-cus flex  border-round m-2 border-solid    h-4rem   m-2 surface-overlay font-bold flex align-items-center justify-content-center">
              Comments</div> -->
 
-
+             <div [routerLink]='[{ outlets: { productlist: ["logout"] } }]' style="top: 8rem; position: relative;"
+             class="min-w-0 button-selected gap-3 flex h-4rem h-4rem m-2 flex align-items-center justify-content-center">  <i   class="left-align-icon pi pi-chart-pie"></i>
+             Log Out</div>
     </div>
   </div>
   <div class="right-half">

@@ -8,6 +8,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProductsComponent } from './products/products.component';
+import { ListComponent } from './list/list.component';
 
 const routes: Routes = [
   { path:'login' ,component:LoginComponent },
@@ -15,8 +16,9 @@ const routes: Routes = [
     path :'products',
     component: ProductsComponent,
     children:[
+      {path:'productlist' , component :ListComponent, outlet:'productlist' },
       {
-        path:'addproduct', component: AddProductComponent, outlet:'productlist',
+        path:'addproduct', component: AddProductComponent, outlet:'productlist'
       },
       {path:'dashboard',component:DashboardComponent, outlet:'productlist' },
       {
