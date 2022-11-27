@@ -27,7 +27,8 @@
 .dash1container {
   width: auto;
   height: 46%;
-  padding-left: 4%;
+ // padding-left: 4%;
+  justify-content: space-evenly;
   @extend %box-shadow;
 }
 .dash1container2{
