@@ -71,7 +71,7 @@ textarea::placeholder {
   font-weight: 500;
   font-size: 17px;
   line-height: 26px;
-  color: #323643;
+  color: $inputtextcolor;
   font-size: Max(16px, 1em);
   padding: 0.35em 0.5em;
 }
@@ -79,7 +79,7 @@ textarea::placeholder {
 .input-textarea {
   // font-family: inherit;
   // font-style: normal;
-  // color: #323643;
+  // color: $inputtextcolor;
 }
 
 .p-button.p-button-outlined {
