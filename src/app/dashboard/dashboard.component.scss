@@ -1,0 +1,104 @@
+ @import "src/styles";
+.product-name {
+  @extend %box-shadow;
+}
+%sales-summary {
+  width: 180px;
+  height: 220px;
+  border-radius: 16px;
+  }
+  .products-dash{
+  @extend %sales-summary;
+  background: #FFF4DE;
+}
+.products-interest{
+  @extend %sales-summary;
+  background: #FFE2E5;
+}
+.products-draft{
+  @extend %sales-summary;
+  background: #E2F1FF;
+}
+.products-expired{
+  @extend %sales-summary;
+  background: #F3E8FF;
+}
+
+.dash1container {
+  width: auto;
+  height: 46%;
+  padding-left: 4%;
+  @extend %box-shadow;
+}
+.dash1container2{
+  width: auto;
+  height: 46%;
+  @extend %box-shadow;
+}
+
+.dash1container3 {
+   width: auto;
+    height: 46%;
+   @extend %box-shadow;
+
+img.storeimagess {
+  width:100%;
+  height:100%;
+  border-radius: 10px;
+  object-fit:cover;
+}
+img.storeicon{
+  width: 48px;
+  height: 48px;
+}
+.storeimage {
+  border-radius: 10px;
+  height:200px;
+  padding: 5%;
+}
+   .storemainname{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    }
+
+   .postalcode {
+      font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+
+color: #000000;
+    }
+}
+// @import "src/styles";
+
+%box-shodowofinner {
+  box-shadow: 15px 20px 45px rgba(233, 233, 233, 0.25);
+  border-radius: 10px;
+}
+
+%addminusbtn {
+  border: 1px solid $primary-color;
+filter: drop-shadow(0px 20px 30px #EEF0F2);
+border-radius: 17px;
+border: 1.5px solid $primary-color;
+width: 30.6px;
+height: 30.6px;
+display: inline-block;
+}
+  .expiring-soon {
+    width: auto;
+    height: 46%;
+    @extend %box-shadow;
+    margin-top: 3%;
+   // margin-left: 3%;
+  }
+.most-interestdata{
+  width: auto;
+  height: 46%;
+  @extend %box-shadow;
+  margin-top: 6%;
+}
