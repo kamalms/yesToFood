@@ -16,24 +16,50 @@
 </div> -->
 <div class="grid min-h-screen mr-6">
   <div class="col-8 px-5 ">
-    <div class="dash1container flex flex-row gap-4 mb-4 ">
+    <div class="dashcontainer1 flex flex-row gap-4 mb-4 ">
        <span class="products-dash mt-8 ml-3"></span>
        <span class="products-interest mt-8"></span>
        <div class="products-draft mt-8"></div>
        <div class="products-expired mt-8 mr-3"></div>
     </div>
-    <div class="expiring-soon ">
-
+    <div class="expiring-soon">
+      <div class="col-12 pt-4 pl-4 pb-3">Expiring Soon</div>
+      <div class="custom-table">
+          <table class="table-container" width="100%" role="table" aria-label="">
+            <thead>
+              <tr class="flex-table header" role="rowgroup">
+                <th class="flex-row-head first" role="columnheader">#</th>
+                <th class="flex-row-head" role="columnheader">Name</th>
+                <th class="flex-row-head" role="columnheader">Category</th>
+                <th class="flex-row-head" role="columnheader">Expires in</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="flex-table row" role="rowgroup">
+                <td class="flex-row first" role="cell"> 1</td>
+                <td class="flex-row product-name-cell" role="cell">Cookies </td>
+                <td class="flex-row" role="cell">Bakery</td>
+                <td class="flex-row" role="cell">1 hour</td>
+              </tr>
+              <tr class="flex-table row" role="rowgroup">
+                <td class="flex-row first" role="cell"> 2</td>
+                <td class="flex-row product-name-cell" role="cell">Bread </td>
+                <td class="flex-row" role="cell">Food</td>
+                <td class="flex-row" role="cell">2 days</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
     </div>
   </div>
   <div class="col-4">
-    <div class="dash1container3">
-        <div class="store col-12 pt-4 pl-4">store</div>
+    <div class="dashcontainer2">
+        <div class="col-12 pt-4 pl-4">store</div>
         <div class="storeimage col-12 ">
           <img  class="storeimagess" src="../../assets/store1.png" >
         </div>
         <div class="storeaddress pl-4">
-          <div class="grid" >
+          <div class="grid mt-4" >
           <div class="col-2">
             <img class="storeicon" src="../../assets/macdo.png" alt="">
           </div>
@@ -46,7 +72,30 @@
         </div>
     </div>
     <div class="most-interestdata">
-
+      <div class="col-12 pt-4 pl-4 pb-3">Most Interest Show</div>
+      <div class="custom-table">
+          <table class="table-container" width="100%" role="table" aria-label="">
+            <thead>
+              <tr class="flex-table header" role="rowgroup">
+                <th class="flex-row-head first" role="columnheader">#</th>
+                <th class="flex-row-head" role="columnheader">Name</th>
+                <th class="flex-row-head" role="columnheader">Interest</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="flex-table row" role="rowgroup">
+                <td class="flex-row first" role="cell"> 1</td>
+                <td class="flex-row product-name-cell" role="cell">Cookies </td>
+                <td class="flex-row" role="cell">Bakery</td>
+              </tr>
+              <tr class="flex-table row" role="rowgroup">
+                <td class="flex-row first" role="cell"> 2</td>
+                <td class="flex-row product-name-cell" role="cell">Bread </td>
+                <td class="flex-row" role="cell">Food</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
     </div>
   </div>
 </div>

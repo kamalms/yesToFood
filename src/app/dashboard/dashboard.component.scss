@@ -1,4 +1,6 @@
  @import "src/styles";
+ $dashboard-row-line : #EDF2F6;
+ $dashboardtitlecolor : #05004E;
 .product-name {
   @extend %box-shadow;
 }
@@ -24,20 +26,208 @@
   background: #F3E8FF;
 }
 
-.dash1container {
+.expiring-soon {
+  width: auto;
+  height: 46%;
+  @extend %box-shadow;
+  margin-top: 3%;
+  top: calc(50% - 32px/2 - 6px);
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: $dashboardtitlecolor;
+
+ // margin-left: 3%;
+ .custom-table {
+ // top: calc(50% - 16px/2 + 46px);
+$table-header: $fieldlabelcolor;
+$table-header-border: none;
+$table-border:none;
+$row-bg: none;
+$header-bg: none;
+caption {
+  display: none;
+}
+
+.flag-icon {
+  margin-right: 0.1em;
+}
+
+td {
+  border-bottom: 1px solid $table-border;
+  padding: 0.5em;
+}
+
+th {
+  background: $header-bg;
+  color: $fieldlabelcolor;
+  padding: 0.5em;
+  border: 1px solid $table-header-border;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
+.flex-row-head{
+font-weight: 400;
+font-size: 13px;
+line-height: 16px;
+color: $fieldlabelcolor;
+}
+.flex-row {
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+color:$inputtextcolor;
+}
+.product-name-cell{
+font-weight: 500;
+font-size: 17px;
+line-height: 26px;
+color:$inputtextcolor;
+}
+.flex-row, .flex-cell {
+  text-align: center;
+}
+
+// @media only screen and (max-width: 767px) {
+
+//   .table-container {
+//     //display: block;
+//   }
+//   th, td {
+//     width: auto;
+//     display: block;
+//     border: 0;
+//   }
+
+//   th {
+//     border-left: solid 1px $table-header-border;
+//     border-right: solid 1px $table-header-border;
+//     border-bottom: solid 1px $table-header-border;
+//   }
+
+//   td {
+//     border-left: solid 1px $table-border;
+//     border-right: solid 1px $table-border;
+//     border-bottom: solid 1px $table-border;
+//   }
+
+//   .flex-row {
+//     width: 100%;
+//   }
+// }
+ }
+}
+.most-interestdata{
+width: auto;
+height: 46%;
+@extend %box-shadow;
+margin-top: 6%;
+font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: $dashboardtitlecolor;
+.custom-table {
+  // top: calc(50% - 16px/2 + 46px);
+ $table-header: $fieldlabelcolor;
+ $table-header-border: none;
+ $table-border:none;
+ $row-bg: none;
+ $header-bg: none;
+ caption {
+   display: none;
+ }
+
+ .table-container {
+   //display: block;
+   // margin: 1em auto;
+   // width: 100%;
+   // max-width: 600px;
+   // border-collapse: collapse;
+ }
+
+ .flag-icon {
+   margin-right: 0.1em;
+ }
+
+ td {
+   border-bottom: 1px solid $table-border;
+   padding: 0.5em;
+ }
+
+ th {
+   background: $header-bg;
+   color: $fieldlabelcolor;
+   padding: 0.5em;
+   border: 1px solid $table-header-border;
+   font-weight: 400;
+   font-size: 13px;
+   line-height: 16px;
+ }
+ .flex-row-head{
+ font-weight: 400;
+ font-size: 13px;
+ line-height: 16px;
+ color: $fieldlabelcolor;
+ }
+ .flex-row {
+ font-weight: 400;
+ font-size: 14px;
+ line-height: 20px;
+ color:$inputtextcolor;
+ }
+ .product-name-cell{
+ font-weight: 500;
+ font-size: 17px;
+ line-height: 26px;
+ color:$inputtextcolor;
+ }
+ .flex-row, .flex-cell {
+   text-align: center;
+ }
+
+ // @media only screen and (max-width: 767px) {
+
+ //   .table-container {
+ //     //display: block;
+ //   }
+ //   th, td {
+ //     width: auto;
+ //     display: block;
+ //     border: 0;
+ //   }
+
+ //   th {
+ //     border-left: solid 1px $table-header-border;
+ //     border-right: solid 1px $table-header-border;
+ //     border-bottom: solid 1px $table-header-border;
+ //   }
+
+ //   td {
+ //     border-left: solid 1px $table-border;
+ //     border-right: solid 1px $table-border;
+ //     border-bottom: solid 1px $table-border;
+ //   }
+
+ //   .flex-row {
+ //     width: 100%;
+ //   }
+ // }
+  }
+}
+
+.dashcontainer1 {
   width: auto;
   height: 46%;
  // padding-left: 4%;
   justify-content: space-evenly;
   @extend %box-shadow;
 }
-.dash1container2{
-  width: auto;
-  height: 46%;
-  @extend %box-shadow;
-}
-
-.dash1container3 {
+.dashcontainer2 {
    width: auto;
     height: 46%;
    @extend %box-shadow;
@@ -90,16 +280,4 @@ width: 30.6px;
 height: 30.6px;
 display: inline-block;
 }
-  .expiring-soon {
-    width: auto;
-    height: 46%;
-    @extend %box-shadow;
-    margin-top: 3%;
-   // margin-left: 3%;
-  }
-.most-interestdata{
-  width: auto;
-  height: 46%;
-  @extend %box-shadow;
-  margin-top: 6%;
-}
+
